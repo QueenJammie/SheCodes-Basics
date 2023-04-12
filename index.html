@@ -247,7 +247,14 @@
       function sourceCode() {
         let newSourceCode = document.querySelector(".code");
         newSourceCode.innerHTML = `<a href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/767/original/sourceCode.jpg?1681333611" alt="Source code for index.html"><br /><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/076/767/original/sourceCode.jpg?1681333611" alt="" width="360px" class="Source code screenshot" /></a><br />`;
-        alert("Tell me if you like my code 😀");
+        let loveIt = prompt(
+          "Do you like my code? Reload the page after seeing it."
+        );
+        if (loveIt === "Yes") {
+          alert("Ohhh! Thank you so much! 🥰");
+        } else {
+          alert("Okay well, I tried! 🤣");
+        }
       }
       let sourceCodeButton = document.querySelector(".sourceCodeButton");
       sourceCodeButton.addEventListener("click", sourceCode);
