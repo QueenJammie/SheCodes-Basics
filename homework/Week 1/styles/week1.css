@@ -1,0 +1,44 @@
+h1,
+h2 {
+  display: block;
+  margin: 10px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  font-weight: normal;
+}
+button {
+  margin-top: 1em;
+  border: 1px solid blue;
+  border-radius: 30px;
+  background-color: blue;
+  color: #fff;
+  padding: 13px 17px;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background-color: #fff;
+  color: blue;
+  cursor: pointer;
+}
+p.signature {
+  font-size: 18px;
+  opacity: 0.7;
+  font-family: monospace;
+}
+.weather {
+  text-align: center;
+  margin-left: 10%;
+}
+.day {
+  display: inline-block;
+  padding: 10px 100px;
+}
+.day:hover {
+  background-color: #ffd2de66;
+}
+.strong {
+  font-weight: bold;
+}

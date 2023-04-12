@@ -1,0 +1,68 @@
+<!-- Complete on 2023/04/11 by Jammie Lachance-Côté -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        text-align: center;
+        font-family: Helvetica, sans-serif;
+      }
+      h1 {
+        color: #181334;
+        margin: 3px;
+        font-size: 34px;
+        margin-top: 3em;
+      }
+      h2 {
+        color: #7e52f6;
+        margin: 3px;
+        font-size: 34px;
+      }
+      button {
+        color: #7e52f6;
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #7e52f6;
+        border-radius: 18px;
+      }
+      button:hover {
+        color: #fff;
+        background-color: #7e52f6;
+        cursor: pointer;
+      }
+    </style>
+    <title>SheCodes</title>
+  </head>
+  <body>
+    <h1>👩‍💻 SheCodes is a Coding Workshop for Women</h1>
+    <h2>Access a new career in Technology</h2>
+    <br />
+    <p>
+      SheCodes teaches coding, design and management skills to women<br />
+      <strong>Limited amount of spots!</strong>
+    </p>
+    <br />
+    <button class="applyNowButton">Apply Now</button>
+    <script>
+      function canSpeakPortuguese() {
+        let country = prompt("What country are you from?");
+        country = country.toUpperCase();
+
+        if (
+          country === "BRASIL" ||
+          country === "BRAZIL" ||
+          country === "PORTUGAL"
+        ) {
+          alert("You speak Portuguese");
+        } else {
+          alert("Go learn Portuguese!");
+        }
+      }
+      let applyNowButton = document.querySelector(".applyNowButton");
+      applyNowButton.addEventListener("click", canSpeakPortuguese);
+    </script>
+  </body>
+</html>
