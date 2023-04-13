@@ -254,10 +254,12 @@
           "Do you like my code? Reload the page after seeing it."
         );
         loveIt = loveIt.toUpperCase();
-        if (loveIt === "YES") {
-          alert("Ohhh! Thank you so much! 🥰");
-        } else {
-          alert("Okay well, I tried! 🤣");
+        if (loveIt.length > 0) {
+          if (loveIt === "YES") {
+            alert("Ohhh! Thank you so much! 🥰");
+          } else {
+            alert("Okay well, I tried! 🤣");
+          }
         }
       }
       let sourceCodeButton = document.querySelector(".sourceCodeButton");
