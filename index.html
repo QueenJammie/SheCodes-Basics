@@ -253,7 +253,8 @@
         let loveIt = prompt(
           "Do you like my code? Reload the page after seeing it."
         );
-        if (loveIt === "Yes") {
+        loveIt = loveIt.toUpperCase();
+        if (loveIt === "YES") {
           alert("Ohhh! Thank you so much! 🥰");
         } else {
           alert("Okay well, I tried! 🤣");
